@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajesh Thangenapally · Technical Lead & AI/ML Engineer</title>
+  <meta name="description" content="10+ year veteran: Technical Lead @ ETP · Lead Java Developer · AI/ML Engineer (TensorFlow, DL4J, LangChain4) · Customer Success Strategist · Freelancer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- ████ GLOBAL SOLAR SYSTEM BACKGROUND ████ -->
+<canvas class="solar-bg" id="solar-canvas"></canvas>
+
+<!-- ████ CURSOR ████ -->
+<div class="cursor" id="cursor"><div class="cursor__dot"></div></div>
+<div class="cursor-trail" id="cursor-trail"></div>
+
+<!-- ████ PROGRESS BAR ████ -->
+<div class="scroll-progress" id="scroll-progress"></div>
+
+<!-- ████ NAV ████ -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo">
+      <span class="logo-bracket">[</span>RT<span class="logo-bracket">]</span>
+    </a>
+    <div class="nav__center" id="nav-links">
+      <a href="#about"      class="nav__item" data-text="About">About</a>
+      <a href="#expertise"  class="nav__item" data-text="Expertise">Expertise</a>
+      <a href="#work"       class="nav__item" data-text="Work">Work</a>
+      <a href="#projects"   class="nav__item" data-text="Projects">Projects</a>
+      <a href="#contact"    class="nav__item" data-text="Contact">Contact</a>
+    </div>
+    <a href="mailto:thangenapally.rajesh@gmail.com" class="nav__cta" id="nav-cta">
+      <span>Let's talk</span>
+      <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <button class="nav__burger" id="nav-burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ████ HERO ████ -->
+<section class="hero" id="hero">
+
+  <div class="hero__content">
+    <div class="hero__eyebrow" id="hero-eyebrow">
+      <span class="blink-dot"></span>
+      <span class="hero__eyebrow-txt">Available for freelance &amp; leadership roles</span>
+    </div>
+
+    <h1 class="hero__headline" id="hero-headline">
+      <span class="hero__hl-name">Rajesh</span><br/>
+      <span class="hero__hl-name hero__hl-name--last">Thangenapally</span>
+    </h1>
+
+    <!-- Designation — exact LinkedIn headline -->
+    <div class="hero__designation">
+      <div class="hero__desig-primary">
+        <span class="desig-tag desig-tag--active">Technical Lead @ ETP</span>
+        <span class="desig-sep">|</span>
+        <span class="desig-tag">Lead Java Developer</span>
+        <span class="desig-sep">|</span>
+        <span class="desig-tag">AI/ML Engineer</span>
+      </div>
+      <div class="hero__desig-secondary">
+        <span class="desig-tech">TensorFlow</span>
+        <span class="desig-dot">&middot;</span>
+        <span class="desig-tech">DL4J</span>
+        <span class="desig-dot">&middot;</span>
+        <span class="desig-tech">LangChain4</span>
+        <span class="desig-dot">&middot;</span>
+        <span class="desig-plain">Customer Success Strategist</span>
+        <span class="desig-dot">&middot;</span>
+        <span class="desig-plain">Freelancer</span>
+      </div>
+    </div>
+
+    <div class="hero__bottom">
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-n" data-count="10">0</span>
+          <span class="hero__stat-unit">yrs</span>
+          <span class="hero__stat-l">Experience</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-n" data-count="3">0</span>
+          <span class="hero__stat-unit">co.</span>
+          <span class="hero__stat-l">Companies Led</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-n" data-count="20">0</span>
+          <span class="hero__stat-unit">+</span>
+          <span class="hero__stat-l">Technologies</span>
+        </div>
+      </div>
+      <div class="hero__scroll-hint">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location + year label -->
+  <div class="hero__side-label">
+    <span>Miyapur, Hyderabad, India &nbsp;&middot;&nbsp; 2026</span>
+  </div>
+</section>
+
+<!-- ████ MARQUEE STRIP ████ -->
+<div class="marquee-strip">
+  <div class="marquee-strip__track">
+    <span>Java</span><span class="dot">·</span>
+    <span>Spring Boot</span><span class="dot">·</span>
+    <span>Microservices</span><span class="dot">·</span>
+    <span>TensorFlow</span><span class="dot">·</span>
+    <span>DL4J</span><span class="dot">·</span>
+    <span>LangChain4</span><span class="dot">·</span>
+    <span>AWS</span><span class="dot">·</span>
+    <span>Docker</span><span class="dot">·</span>
+    <span>Hibernate</span><span class="dot">·</span>
+    <span>MySQL</span><span class="dot">·</span>
+    <span>React</span><span class="dot">·</span>
+    <span>REST APIs</span><span class="dot">·</span>
+    <span>Redis</span><span class="dot">·</span>
+    <span>Jenkins</span><span class="dot">·</span>
+    <span>Maven</span><span class="dot">·</span>
+    <span>Java</span><span class="dot">·</span>
+    <span>Spring Boot</span><span class="dot">·</span>
+    <span>Microservices</span><span class="dot">·</span>
+    <span>TensorFlow</span><span class="dot">·</span>
+    <span>DL4J</span><span class="dot">·</span>
+    <span>LangChain4</span><span class="dot">·</span>
+    <span>AWS</span><span class="dot">·</span>
+    <span>Docker</span><span class="dot">·</span>
+    <span>Hibernate</span><span class="dot">·</span>
+    <span>MySQL</span><span class="dot">·</span>
+    <span>React</span><span class="dot">·</span>
+    <span>REST APIs</span><span class="dot">·</span>
+    <span>Redis</span><span class="dot">·</span>
+    <span>Jenkins</span><span class="dot">·</span>
+    <span>Maven</span>
+  </div>
+</div>
+
+<!-- ████ ABOUT ████ -->
+<section class="about" id="about">
+  <div class="about__grid">
+    <!-- Left: big number + tagline -->
+    <div class="about__left reveal">
+      <div class="about__decade">
+        <span class="decade-num">10</span>
+        <span class="decade-label">Years<br/>of Code<br/>&amp; Command</span>
+      </div>
+      <div class="about__role-stack">
+        <span class="role-pill role-pill--blue">Technical Lead</span>
+        <span class="role-pill role-pill--cyan">AI / ML Engineer</span>
+        <span class="role-pill role-pill--purple">Java Architect</span>
+        <span class="role-pill role-pill--amber">Freelancer</span>
+      </div>
+    </div>
+
+    <!-- Right: copy -->
+    <div class="about__right reveal reveal--delay-1">
+      <span class="section-label">/ About</span>
+      <h2 class="about__heading">
+        I build systems that <br/><span class="text-fill">think, scale</span> &amp; deliver.
+      </h2>
+      <p class="about__body">
+        I'm a <strong>Technical Lead at ETP International</strong> architecting <em>ORDAZZLE</em> — a cloud-native SaaS platform for multi-channel retailing. With a decade of hands-on engineering, I've progressed from building CRUD apps to deploying neural networks in Java enterprises using <strong>TensorFlow, DL4J, and LangChain4</strong>.
+      </p>
+      <p class="about__body">
+        My work sits at the intersection of <strong>distributed systems</strong> and <strong>applied AI</strong> — integrating deep learning pipelines into Spring Boot microservices, mentoring senior developers, and translating complex business requirements into elegant code.
+      </p>
+      <div class="about__meta">
+        <div class="meta-item"><span>📍</span> Miyapur, Hyderabad</div>
+        <div class="meta-item"><span>🎓</span> B.Tech ECE · MLRIT 2016</div>
+        <div class="meta-item"><span>🌐</span> Telugu · English · Hindi</div>
+        <div class="meta-item"><span>💼</span> Open to remote / freelance</div>
+      </div>
+      <div class="about__links">
+        <a href="https://linkedin.com/in/rajeshthangenapally" target="_blank" class="link-arrow" id="about-linkedin">
+          LinkedIn <span>↗</span>
+        </a>
+        <a href="https://github.com/rajeshthangenapally" target="_blank" class="link-arrow" id="about-github">
+          GitHub <span>↗</span>
+        </a>
+        <a href="mailto:thangenapally.rajesh@gmail.com" class="link-arrow" id="about-email">
+          Email <span>↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ████ EXPERTISE ████ -->
+<section class="expertise" id="expertise">
+  <div class="expertise__header reveal">
+    <span class="section-label">/ Expertise</span>
+    <h2 class="expertise__title">What I<br/><span class="text-fill">Bring</span></h2>
+  </div>
+
+  <div class="expertise__cards">
+
+    <div class="exp-card exp-card--wide reveal" id="exp-aiml">
+      <div class="exp-card__num">01</div>
+      <div class="exp-card__content">
+        <div class="exp-card__icon"><svg viewBox="0 0 24 24" width="32" height="32" stroke="var(--cyan)" stroke-width="1.5" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg></div>
+        <h3>AI / ML Engineering</h3>
+        <p>Building intelligent systems using TensorFlow, DL4J (Deep Learning4J), and LangChain4. Integrating neural network models into Java enterprise applications, creating AI pipelines for real-time inference and business intelligence.</p>
+        <div class="exp-card__tags">
+          <span>TensorFlow</span><span>DL4J</span><span>LangChain4</span>
+          <span>Neural Nets</span><span>AI Pipelines</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-card reveal reveal--delay-1" id="exp-java">
+      <div class="exp-card__num">02</div>
+      <div class="exp-card__content">
+        <div class="exp-card__icon"><svg viewBox="0 0 24 24" width="32" height="32" stroke="var(--blue)" stroke-width="1.5" fill="none"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg></div>
+        <h3>Java Architecture</h3>
+        <p>10 years designing robust, scalable Java systems. Expert in Spring Boot, Microservices, Hibernate/JPA, and REST/SOAP API design for enterprise SaaS platforms.</p>
+        <div class="exp-card__tags">
+          <span>Spring Boot</span><span>Microservices</span><span>Hibernate</span><span>Maven</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-card reveal reveal--delay-2" id="exp-lead">
+      <div class="exp-card__num">03</div>
+      <div class="exp-card__content">
+        <div class="exp-card__icon"><svg viewBox="0 0 24 24" width="32" height="32" stroke="var(--purple)" stroke-width="1.5" fill="none"><path d="M16 21v-2a4 4 0 0 0-4-4H5.5"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg></div>
+        <h3>Technical Leadership</h3>
+        <p>Leading cross-functional engineering teams, conducting architectural reviews, defining KPIs, and translating complex business requirements into production-ready solutions.</p>
+        <div class="exp-card__tags">
+          <span>Team Lead</span><span>Architecture</span><span>Code Review</span><span>KPIs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-card reveal" id="exp-cloud">
+      <div class="exp-card__num">04</div>
+      <div class="exp-card__content">
+        <div class="exp-card__icon"><svg viewBox="0 0 24 24" width="32" height="32" stroke="var(--amber)" stroke-width="1.5" fill="none"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg></div>
+        <h3>Cloud & DevOps</h3>
+        <p>Deploying and managing cloud infrastructure on AWS. Building CI/CD pipelines with Jenkins, containerizing services with Docker, and monitoring production systems.</p>
+        <div class="exp-card__tags">
+          <span>AWS</span><span>Docker</span><span>Jenkins</span><span>Redis</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-card reveal reveal--delay-1" id="exp-customer">
+      <div class="exp-card__num">05</div>
+      <div class="exp-card__content">
+        <div class="exp-card__icon"><svg viewBox="0 0 24 24" width="32" height="32" stroke="var(--white)" stroke-width="1.5" fill="none"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
+        <h3>Customer Success</h3>
+        <p>Bridging technical depth with business outcomes. Managing onshore client communication, requirements analysis, and ensuring technical excellence maps to measurable ROI.</p>
+        <div class="exp-card__tags">
+          <span>Client Management</span><span>Requirements</span><span>SLAs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-card reveal reveal--delay-2" id="exp-freelance">
+      <div class="exp-card__num">06</div>
+      <div class="exp-card__content">
+        <div class="exp-card__icon"><svg viewBox="0 0 24 24" width="32" height="32" stroke="var(--cyan)" stroke-width="1.5" fill="none"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg></div>
+        <h3>Freelance Engineering</h3>
+        <p>Full-stack web solutions for clients — custom Java backends, responsive frontends, database design, and deployment. Results-driven with fast turnaround.</p>
+        <div class="exp-card__tags">
+          <span>Full-Stack</span><span>Java</span><span>MySQL</span><span>React</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- AI Neural Viz -->
+  <div class="neural-viz reveal">
+    <div class="neural-viz__label">// Deep Learning Architecture</div>
+    <div class="neural-net" id="neural-net">
+      <div class="nn-layer nn-layer--input">
+        <div class="nn-node"></div><div class="nn-node"></div>
+        <div class="nn-node"></div><div class="nn-node"></div>
+        <span class="nn-label">Input</span>
+      </div>
+      <div class="nn-layer nn-layer--hidden">
+        <div class="nn-node nn-node--active"></div><div class="nn-node"></div>
+        <div class="nn-node nn-node--active"></div><div class="nn-node"></div>
+        <div class="nn-node"></div>
+        <span class="nn-label">Hidden 1</span>
+      </div>
+      <div class="nn-layer nn-layer--hidden">
+        <div class="nn-node"></div><div class="nn-node nn-node--active"></div>
+        <div class="nn-node"></div><div class="nn-node nn-node--active"></div>
+        <div class="nn-node"></div>
+        <span class="nn-label">Hidden 2</span>
+      </div>
+      <div class="nn-layer nn-layer--output">
+        <div class="nn-node nn-node--output"></div>
+        <div class="nn-node nn-node--output"></div>
+        <div class="nn-node nn-node--output"></div>
+        <span class="nn-label">Output</span>
+      </div>
+    </div>
+    <div class="neural-viz__tech">
+      <span class="nt">TensorFlow</span>
+      <span class="nt">DL4J</span>
+      <span class="nt">LangChain4</span>
+    </div>
+  </div>
+</section>
+
+<!-- ████ WORK EXPERIENCE ████ -->
+<section class="work" id="work">
+  <div class="work__header reveal">
+    <span class="section-label">/ Experience</span>
+    <h2 class="work__title">10 Years.<br/><span class="text-fill">3 Companies.</span><br/>Countless Battles Won.</h2>
+  </div>
+
+  <div class="work__timeline">
+
+    <!-- ETP -->
+    <div class="work__item work__item--current reveal" id="work-etp">
+      <div class="work__item-year">
+        <span>2021</span>
+        <div class="work__year-line"></div>
+        <span class="current-tag">Now</span>
+      </div>
+      <div class="work__item-card">
+        <div class="work__item-top">
+          <div class="work__company-badge etp-badge">
+            <img src="https://www.google.com/s2/favicons?domain=etpgroup.com&sz=64" alt="ETP" class="company-logo-img" />
+          </div>
+          <div class="work__item-info">
+            <h3 class="work__role">Technical Lead / Team Lead</h3>
+            <div class="work__company">ETP International Pvt. Ltd. <span>· Mumbai</span></div>
+          </div>
+          <span class="work__status">Current</span>
+        </div>
+        <div class="work__project-banner">
+          <span class="work__project-label">Flagship Project</span>
+          <strong>ORDAZZLE</strong> — Cloud-native SaaS for Multi-Channel Retailing
+        </div>
+        <ul class="work__bullets">
+          <li>Architected and led end-to-end development of ORDAZZLE, a scalable multi-channel retail SaaS platform serving enterprise clients globally</li>
+          <li>Integrated <strong>GitHub Copilot</strong> into the team's development workflow for rapid code generation, automated testing, and documentation, significantly boosting productivity</li>
+          <li>Monitor KPIs, conduct architectural reviews, mentor senior developers, and drive cross-team delivery</li>
+          <li>Translate complex multi-stakeholder business requirements into robust, production-grade technical implementations</li>
+          <li>Own comprehensive technical documentation and ensure consistent code quality across a distributed engineering team</li>
+        </ul>
+        <div class="work__stack">
+          <span>Spring Boot</span><span>Microservices</span><span>Java</span>
+          <span>GitHub Copilot</span>
+          <span>Hibernate</span><span>MySQL</span><span>Maven</span><span>Jenkins</span><span>AWS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TechnoLabs -->
+    <div class="work__item reveal" id="work-tl">
+      <div class="work__item-year">
+        <span>2018</span>
+        <div class="work__year-line"></div>
+        <span>2021</span>
+      </div>
+      <div class="work__item-card">
+        <div class="work__item-top">
+          <div class="work__company-badge tl-badge">
+            <img src="https://www.google.com/s2/favicons?domain=technolabs.io&sz=64" alt="TechnoLabs" class="company-logo-img" onerror="this.style.display='none';this.parentElement.innerHTML='TL'" />
+          </div>
+          <div class="work__item-info">
+            <h3 class="work__role">Senior Java Developer</h3>
+            <div class="work__company">TechnoLabs Pvt. Ltd. <span>· Hyderabad</span></div>
+          </div>
+        </div>
+        <div class="work__project-banner">
+          <span class="work__project-label">Project</span>
+          <strong>Omni Retailer</strong> — Hyper-local Retail Suite
+        </div>
+        <ul class="work__bullets">
+          <li>Built and maintained RESTful &amp; SOAP web services for a hyper-local retail platform handling high-volume transactions</li>
+          <li>Managed onshore client communications, acting as the technical bridge between business stakeholders and dev teams</li>
+          <li>Conducted rigorous code reviews ensuring performance, quality, and test coverage across the codebase</li>
+          <li>Built scalable service layers using Java, Spring, Servlets, JSP, Hibernate, Oracle, and Maven</li>
+        </ul>
+        <div class="work__stack">
+          <span>Java</span><span>Spring</span><span>Hibernate</span><span>REST/SOAP</span>
+          <span>JSP</span><span>Oracle</span><span>Maven</span><span>SOAP UI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avvas -->
+    <div class="work__item reveal" id="work-av">
+      <div class="work__item-year">
+        <span>2017</span>
+        <div class="work__year-line"></div>
+        <span>2018</span>
+      </div>
+      <div class="work__item-card">
+        <div class="work__item-top">
+          <div class="work__company-badge av-badge">
+            <img src="https://www.google.com/s2/favicons?domain=avvasinfotech.com&sz=64" alt="Avvas" class="company-logo-img" onerror="this.style.display='none';this.parentElement.innerHTML='AV'" />
+          </div>
+          <div class="work__item-info">
+            <h3 class="work__role">Associate Support Engineer</h3>
+            <div class="work__company">Avvas Infotech Pvt. Ltd. <span>· Hyderabad</span></div>
+          </div>
+        </div>
+        <ul class="work__bullets">
+          <li>Designed and developed responsive, modern web applications tailored to individual client needs</li>
+          <li>Built student enrollment and feedback management systems with Java backend and MySQL</li>
+          <li>Ensured mobile-responsive UI/UX with HTML/CSS, JavaScript, and Tomcat deployment</li>
+        </ul>
+        <div class="work__stack">
+          <span>Java</span><span>HTML/CSS</span><span>JavaScript</span><span>SQL</span><span>Tomcat</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ████ PROJECTS ████ -->
+<section class="projects" id="projects">
+  <div class="projects__header reveal">
+    <span class="section-label">/ Projects</span>
+    <h2 class="projects__title">Selected<br/><span class="text-fill">Work</span></h2>
+  </div>
+
+  <div class="projects__list">
+
+    <div class="proj-item reveal" id="proj-ordazzle">
+      <div class="proj-item__num">01</div>
+      <div class="proj-item__content">
+        <div class="proj-item__top">
+          <h3 class="proj-item__name">ORDAZZLE</h3>
+          <div class="proj-item__tags">
+            <span>SaaS</span><span>Enterprise</span><span>Retail</span>
+          </div>
+        </div>
+        <p class="proj-item__desc">
+          A cloud-native, multi-tenant SaaS platform for end-to-end multi-channel retail operations. Handles inventory sync, order management, analytics, and marketplace integrations at enterprise scale across global clients.
+        </p>
+        <div class="proj-item__stack">
+          Spring Boot · Microservices · Java · Hibernate · MySQL · REST APIs · Jenkins · AWS · Maven
+        </div>
+        <div class="proj-item__footer">
+          <span class="proj-item__company">@ ETP International · 2021–Present</span>
+        </div>
+      </div>
+      <div class="proj-item__visual">
+        <div class="proj-visual-block proj-visual-block--big">
+          <span class="pv-icon"><svg viewBox="0 0 24 24" width="36" height="36" stroke="var(--cyan)" stroke-width="1.5" fill="none"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></span>
+          <span>Multi-Channel</span>
+          <span>Retail SaaS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-item proj-item--alt reveal" id="proj-ai">
+      <div class="proj-item__num">02</div>
+      <div class="proj-item__content">
+        <div class="proj-item__top">
+          <h3 class="proj-item__name">AI/ML Integration Engine</h3>
+          <div class="proj-item__tags">
+            <span>AI/ML</span><span>Deep Learning</span><span>LangChain</span>
+          </div>
+        </div>
+        <p class="proj-item__desc">
+          Built intelligent AI pipelines integrating TensorFlow and DL4J neural networks into Java-based microservices. Developed LangChain4-powered conversational intelligence modules enabling real-time business insights and predictive retail analytics.
+        </p>
+        <div class="proj-item__stack">
+          TensorFlow · DL4J · LangChain4 · Java · Spring Boot · Python Interop
+        </div>
+        <div class="proj-item__footer">
+          <span class="proj-item__company">AI/ML Engineering · 2022–Present</span>
+        </div>
+      </div>
+      <div class="proj-item__visual">
+        <div class="proj-visual-block proj-visual-block--ai">
+          <div class="mini-neural">
+            <div class="mn-node"></div><div class="mn-conn"></div>
+            <div class="mn-node mn-node--active"></div><div class="mn-conn"></div>
+            <div class="mn-node"></div>
+          </div>
+          <span>Neural Nets</span>
+          <span>in Production</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-item reveal" id="proj-omni">
+      <div class="proj-item__num">03</div>
+      <div class="proj-item__content">
+        <div class="proj-item__top">
+          <h3 class="proj-item__name">Omni Retailer Platform</h3>
+          <div class="proj-item__tags">
+            <span>Retail</span><span>Hyper-local</span><span>APIs</span>
+          </div>
+        </div>
+        <p class="proj-item__desc">
+          A hyper-local retail management suite enabling real-time inventory, omnichannel order management, and integrated customer engagement. REST &amp; SOAP APIs built for seamless multi-channel integration at scale.
+        </p>
+        <div class="proj-item__stack">
+          Java · Spring · REST/SOAP · Hibernate · Oracle DB · Maven · SOAP UI
+        </div>
+        <div class="proj-item__footer">
+          <span class="proj-item__company">@ TechnoLabs · 2018–2021</span>
+        </div>
+      </div>
+      <div class="proj-item__visual">
+        <div class="proj-visual-block proj-visual-block--retail">
+          <span class="pv-icon"><svg viewBox="0 0 24 24" width="36" height="36" stroke="var(--blue)" stroke-width="1.5" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></span>
+          <span>Omnichannel</span>
+          <span>Commerce</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-item proj-item--alt reveal" id="proj-freelance">
+      <div class="proj-item__num">04</div>
+      <div class="proj-item__content">
+        <div class="proj-item__top">
+          <h3 class="proj-item__name">Freelance Client Solutions</h3>
+          <div class="proj-item__tags">
+            <span>Freelance</span><span>Full-Stack</span><span>Custom</span>
+          </div>
+        </div>
+        <p class="proj-item__desc">
+          Delivered custom web applications, student management portals, and business websites for clients. Java backend, responsive frontends, and database design — from requirements to deployment.
+        </p>
+        <div class="proj-item__stack">
+          Java · HTML/CSS · JavaScript · MySQL · Tomcat · jQuery
+        </div>
+        <div class="proj-item__footer">
+          <span class="proj-item__company">Freelance · 2017–Present</span>
+        </div>
+      </div>
+      <div class="proj-item__visual">
+        <div class="proj-visual-block proj-visual-block--freelance">
+          <span class="pv-icon"><svg viewBox="0 0 24 24" width="36" height="36" stroke="var(--white)" stroke-width="1.5" fill="none"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span>
+          <span>Client</span>
+          <span>Delivery</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ████ EDUCATION ████ -->
+<section class="education" id="education">
+  <div class="edu__inner">
+    <div class="edu__header reveal">
+      <span class="section-label">/ Education</span>
+      <h2 class="edu__title">Foundation<br/>of <span class="text-fill">Excellence</span></h2>
+    </div>
+    <div class="edu__cards">
+      <div class="edu__card reveal" id="edu-btech">
+        <div class="edu__card-year">2016</div>
+        <div class="edu__card-degree">B.Tech – Electronics &amp; Communication Engineering</div>
+        <div class="edu__card-inst">MLRIT · Hyderabad</div>
+        <div class="edu__card-tag">Primary Degree</div>
+      </div>
+      <div class="edu__card reveal reveal--delay-1" id="edu-inter">
+        <div class="edu__card-year">2012</div>
+        <div class="edu__card-degree">Intermediate (12th)</div>
+        <div class="edu__card-inst">Narayana Junior College · Hyderabad</div>
+        <div class="edu__card-tag">Science Stream</div>
+      </div>
+      <div class="edu__card reveal reveal--delay-2" id="edu-ssc">
+        <div class="edu__card-year">2010</div>
+        <div class="edu__card-degree">SSC (10th)</div>
+        <div class="edu__card-inst">Kakatiya High School · Nizamabad</div>
+        <div class="edu__card-tag">Distinction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ████ CONTACT ████ -->
+<section class="contact" id="contact">
+  <div class="contact__inner">
+    <div class="contact__left reveal">
+      <span class="section-label">/ Contact</span>
+      <h2 class="contact__headline">
+        Got a project?<br/>
+        <span class="text-fill">Let's build</span><br/>
+        something great.
+      </h2>
+      <p class="contact__sub">Whether it's leading an engineering team, an AI integration, or a freelance project — I'm all ears.</p>
+
+      <div class="contact__links">
+        <a href="mailto:thangenapally.rajesh@gmail.com" class="contact__link" id="c-email">
+          <span class="contact__link-icon">✉</span>
+          <div>
+            <small>Email</small>
+            <span>thangenapally.rajesh@gmail.com</span>
+            <span style="font-size: 0.75rem; color: var(--faint); display: block; margin-top: 2px;">trajesh7246@yahoo.com</span>
+          </div>
+          <span class="contact__link-arrow">↗</span>
+        </a>
+        <a href="tel:+918008107933" class="contact__link" id="c-phone">
+          <span class="contact__link-icon">📱</span>
+          <div>
+            <small>Phone</small>
+            <span>+91 8008 107 933</span>
+            <span style="font-size: 0.75rem; color: var(--faint); display: block; margin-top: 2px;">+91 8919 219 524</span>
+          </div>
+          <span class="contact__link-arrow">↗</span>
+        </a>
+        <a href="https://wa.me/918008107933" target="_blank" class="contact__link" id="c-whatsapp">
+          <span class="contact__link-icon" style="color: #25D366;">💬</span>
+          <div>
+            <small>WhatsApp (HR / Jobs)</small>
+            <span>Message me instantly</span>
+          </div>
+          <span class="contact__link-arrow">↗</span>
+        </a>
+        <a href="https://linkedin.com/in/rajeshthangenapally" target="_blank" class="contact__link" id="c-linkedin">
+          <span class="contact__link-icon">💼</span>
+          <div>
+            <small>LinkedIn</small>
+            <span>linkedin.com/in/rajeshthangenapally</span>
+          </div>
+          <span class="contact__link-arrow">↗</span>
+        </a>
+        <a href="https://github.com/rajeshthangenapally" target="_blank" class="contact__link" id="c-github">
+          <span class="contact__link-icon">🐙</span>
+          <div>
+            <small>GitHub</small>
+            <span>github.com/rajeshthangenapally</span>
+          </div>
+          <span class="contact__link-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact__form reveal reveal--delay-2" id="contact-form" onsubmit="submitForm(event)">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="f-name">Name</label>
+          <input type="text" id="f-name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-field">
+          <label for="f-email">Email</label>
+          <input type="email" id="f-email" name="email" placeholder="your@email.com" required />
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="f-subject">Subject</label>
+        <input type="text" id="f-subject" name="subject" placeholder="Project · Job opportunity · Collaboration" />
+      </div>
+      <div class="form-field">
+        <label for="f-message">Message</label>
+        <textarea id="f-message" name="message" rows="5" placeholder="Tell me about your idea or requirement…" required></textarea>
+      </div>
+      <button type="submit" class="form-submit" id="f-submit">
+        <span id="f-btn-txt">Send Message</span>
+        <span id="f-btn-arrow" class="form-submit__arrow">→</span>
+      </button>
+      <div id="f-success" class="form-success" style="display:none;">✅ Sent! I'll get back to you within 24 hours.</div>
+    </form>
+  </div>
+</section>
+
+<!-- ████ FOOTER ████ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="logo-bracket">[</span>RT<span class="logo-bracket">]</span>
+      <span class="footer__name">Rajesh Thangenapally</span>
+    </div>
+    <div class="footer__copy">
+      Technical Lead · AI/ML Engineer · Java Expert · Freelancer<br/>
+      <small>© <span id="yr"></span> · Hyderabad, India · Built with precision</small>
+    </div>
+    <div class="footer__socials">
+      <a href="https://linkedin.com/in/rajeshthangenapally" target="_blank" aria-label="LinkedIn" class="footer__soc" id="f-linkedin">in</a>
+      <a href="https://github.com/rajeshthangenapally" target="_blank" aria-label="GitHub" class="footer__soc" id="f-github">gh</a>
+      <a href="mailto:thangenapally.rajesh@gmail.com" aria-label="Email" class="footer__soc" id="f-email">em</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
